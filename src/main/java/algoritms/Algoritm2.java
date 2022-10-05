@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Algoritm2 {
     public static void alg2() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите имя");
+        System.out.print("Введите имя: ");
         String b = scanner.nextLine();
         if (b.equals("Вячеслав")) {
             System.out.println("Привет, Вячеслав");

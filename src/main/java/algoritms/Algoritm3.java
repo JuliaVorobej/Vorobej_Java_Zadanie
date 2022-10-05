@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class Algoritm3 {
     public static void alg3() {
-        System.out.println("Введите размер массива");
+        System.out.print("Введите размер массива: ");
         Scanner scanner = new Scanner(System.in);
-        int size = scanner.nextInt();
+        int size = Integer.parseInt(scanner.nextLine());
         int[] array = new int[size];
-        System.out.println("Заполните массив");
-        for (int i = 0; i < size; i++) {
-            array[i] = scanner.nextInt();
+        System.out.print("Заполните массив: ");
+        String a = scanner.nextLine().trim();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = Integer.parseInt(a.split(" ")[i]);
         }
         System.out.println("Элементы массива кратные 3:");
         for (int i = 0; i < array.length; i++) {
